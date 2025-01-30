@@ -16,10 +16,19 @@
 
     <h2> {{titulo}} com Flask</h2>
     <br>
+    <form method="POST" action="/verificarLogin" >
+      <label>Digite seu nome: </label>
+      <br>
+      <input type="text" name="nomeUsuario">
+      <br>
+      <label>Senha:</label>
+      <br>
+      <input type="text" name="senhaUsuario">
+      <br>
+      <button type="submit" id="button">Enviar</button>
+  </form>
 
-    {% for u in usuarios %}
-        <p> {{u.nome}} - {{u.membro_ativo}}</p>
-    {% endfor %}
+  <a href="/cadastro">Cadastrar</a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
