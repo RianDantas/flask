@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+</head>
+<body>
+    <h1>Recuperação de Senha</h1>
+
+    <form method="post" action="/recuperacao">
+        <label>Digite seu nome:</label>
+        <input type="text" name="nome">
+        <br>
+        <label>Digite seu usuario:</label>
+        <input type="text" name="usuario">
+        <br>
+        <button type="submit">Recuperar</button>
+    </form>
+
+    <p>{{message}}</p>
+</body>
+</html>
