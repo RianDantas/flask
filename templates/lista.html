@@ -7,12 +7,14 @@
 </head>
 <body>
 
-    <h1>Gestão de convidados</h1>
-    <a href="/recuperarSenha">Recuperar senha</a>
-    <br>
-    <a href="/paginaMudarSenha">Mudar Senha</a>
+    <h1>Usuários cadastrados</h1>
+    
+    {% for usuario in lista %}
+        <p>{{ usuario["nome"], usuario["login"], usuario["senha"] }}</p>
+    {% endfor %}
+
+
     <a href="/">Sair</a>
 
-    
 </body>
 </html>
